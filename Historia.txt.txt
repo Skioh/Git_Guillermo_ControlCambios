@@ -7,11 +7,12 @@
 -git checkout master - buelvo a la rama master
 -git merge Mejoras - fundimos las ramas para incluir los cambios de mejoras 
 #Olvidé introducir el documento de propuesta de mejoras asi que lo incluyo a posteriori, deberia haberlo introducido en control de cambios antes de fundir las ramas
+introduje el documento en la rama Mejoras y repeti el Merge
 -git branch -d Mejoras - elimino la rama Mejoras
 -git add . - Actualizamos repositorio despues del borrado del documento de propuestas
 -git commit -m  "Eliminado el documento de cambios" - actualizacion repositorio
 -git tag -a R2 -m "Versión 2" - etiqueta del estado actual como R2
--git add . 
+-git add .  - Añadimos los cambios: Etiqueta R2
 -git commit -m  "Actualizacion del documento por la v3" - actualizacion repositorio
 -git log - comprobamos las ids de los commits
 -git reset --soft R2 - volvemos al r2 para sustituir plantillas
@@ -19,4 +20,13 @@
 -git commit -m  "Plantillas incluidas en la v3" - actualizacion repositorio
 -git tag -a R3 -m "Versión 3" - etiqueta del estado actual como R3
 -git remote add origin https://github.com/Skioh/Git_Guillermo_ControlCambios.git - vinculamos repositorio local al remoto
--
+-git push origin master - pusheo la rama al repositorio remoto
+-git push origin --tags -  pusheo las etiquetas al repositorio remoto
+-git pull origin master - hago pull para actualizar el repositorio local por si se ha hecho algun cambio en el remoto
+-git add . - añadimos los cambios en historia.txt
+-git commit -m  "Actualizamos el documento historia.txt"
+-git diff historia.txt.txt - Trate de comprobar las diferencias respectivas al fichero pero ya habia realizado un commit pq fue inutil
+-git diff HEAD origin/master - Compruebo las diferencias entre el reposito remoto y la rama main comprobando asi los cambios de historia.txt
+-git add . - añadimos los cambios en historia.txt
+-git commit -m  "Actualizamos el documento historia.txt"
+-git push origin master - Actualizamos el repositorio remoto
