@@ -1,1 +1,8 @@
-$ git init Inicializamos el repositorio
+-git init Inicializamos el repositorio
+-git add . -Añador los cambios en este caso la estructura de carpetas, el doc historia.txt, y las v1 del control de cambios y plantillas
+-git commit -m  "Historia.txt , Documentos del control de cambios han sido añadidos"
+-git tag -a R1 -m "Versión R1" - etiqueta el estado como R1
+-git branch Mejoras - crea la rama mejoras
+-git checkout - moverse a la rama mejoras
+-git checkout master - buelvo a la rama master
+-git merge Mejoras - fundimos las ramas para incluir los cambios de mejoras 
