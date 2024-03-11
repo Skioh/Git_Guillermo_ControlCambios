@@ -6,3 +6,10 @@
 -git checkout - moverse a la rama mejoras
 -git checkout master - buelvo a la rama master
 -git merge Mejoras - fundimos las ramas para incluir los cambios de mejoras 
+#Olvidé introducir el documento de propuesta de mejoras asi que lo incluyo a posteriori, deberia haberlo introducido en control de cambios antes de fundir las ramas
+-git branch -d Mejoras - elimino la rama Mejoras
+-git add . - Actualizamos repositorio despues del borrado del documento de propuestas
+-git commit -m  "Eliminado el documento de cambios"
+-git tag -a R2 -m "Versión 2" - etiqueta del estado actual como R2
+-git commit -m  "Actualizacion del documento por la v3"
+
