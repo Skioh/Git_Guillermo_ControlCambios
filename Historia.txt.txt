@@ -1,6 +1,6 @@
 -git init Inicializamos el repositorio
 -git add . -Añador los cambios en este caso la estructura de carpetas, el doc historia.txt, y las v1 del control de cambios y plantillas
--git commit -m  "Historia.txt , Documentos del control de cambios han sido añadidos"
+-git commit -m  "Historia.txt , Documentos del control de cambios han sido añadidos" - actualizacion repositorio
 -git tag -a R1 -m "Versión R1" - etiqueta el estado como R1
 -git branch Mejoras - crea la rama mejoras
 -git checkout - moverse a la rama mejoras
@@ -9,7 +9,14 @@
 #Olvidé introducir el documento de propuesta de mejoras asi que lo incluyo a posteriori, deberia haberlo introducido en control de cambios antes de fundir las ramas
 -git branch -d Mejoras - elimino la rama Mejoras
 -git add . - Actualizamos repositorio despues del borrado del documento de propuestas
--git commit -m  "Eliminado el documento de cambios"
+-git commit -m  "Eliminado el documento de cambios" - actualizacion repositorio
 -git tag -a R2 -m "Versión 2" - etiqueta del estado actual como R2
--git commit -m  "Actualizacion del documento por la v3"
-
+-git add . 
+-git commit -m  "Actualizacion del documento por la v3" - actualizacion repositorio
+-git log - comprobamos las ids de los commits
+-git reset --soft R2 - volvemos al r2 para sustituir plantillas
+-git add . - añadimos los cambios en la documentacion y plantillas
+-git commit -m  "Plantillas incluidas en la v3" - actualizacion repositorio
+-git tag -a R3 -m "Versión 3" - etiqueta del estado actual como R3
+-git remote add origin https://github.com/Skioh/Git_Guillermo_ControlCambios.git - vinculamos repositorio local al remoto
+-
